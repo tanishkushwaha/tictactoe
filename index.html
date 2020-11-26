@@ -1,0 +1,58 @@
+<!-- Created by Tanish Kushwaha -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="tictactoe.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 class="header">Tic Tac Toe</h1>
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-grid-3x3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4V6h4v4H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0h4v4H6v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0H6V1h4v4z"/>
+                  </svg>
+                <div class="custom-control custom-switch unselectable">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1" id="toggle-button">Dark mode</label>
+                  </div>
+                <button id="restart" class="btn btn-primary btn-lg">Restart</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="alert alert-secondary text-center" id="turnalert" role="alert"></div>
+            <div class="alert alert-success text-center" id="winalert" role="alert"></div>
+            <div class="alert alert-warning text-center" id="tiealert" role="alert"></div>
+
+            <table>
+                <tr>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                </tr>
+                <tr>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                </tr>
+                <tr>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                    <td class="unselectable"></td>
+                </tr>
+            </table>
+        </div>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+              <span class="text-muted">Developed by Tanish Kushwaha.</span>
+            </div>
+          </footer>
+
+    </body>
+    <script src="tictactoe.js"></script>
+</html>

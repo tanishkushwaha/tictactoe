@@ -1,0 +1,165 @@
+/* Created by Tanish Kushwaha */
+
+:root {
+    --time: 0.5s;
+}
+
+body {
+    background-color: white;
+    --win-square-color: hsl(15, 67%, 82%);
+    --primary-color: #d65a31;
+    --primary-color-d1: hsl(15, 67%, 47%);
+    --primary-color-d2: hsl(15, 67%, 42%);
+    transition: background-color var(--time);
+}
+
+body.dark {
+    background-color: #111111;
+    --win-square-color: hsl(273, 31%, 62%);
+    --primary-color: #6f4a8e;
+    --primary-color-d1: hsl(273, 31%, 37%);
+    --primary-color-d2: hsl(273, 31%, 32%);
+    --typo-color: #818181;
+    --typo-bg-color: #2e2e2e;
+    transition: background-color var(--time);
+}
+
+td {
+    height: 2em;
+    width: 2em;
+    border: 4px solid black;
+    text-align: center;
+    font-size: 60px;
+    background-color: white;
+    color: var(--primary-color);
+    transition: background-color var(--time);
+}
+
+table {
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.header {
+    display: inline-block;
+}
+
+svg {
+    margin-bottom: 1.4em;
+    margin-left: 0.3em;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn:active {
+    background-color: var(--primary-color-d2) !important;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-d1);
+}
+
+.btn:focus {
+    background-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.btn:focus:hover {
+    background-color: var(--primary-color-d1);
+}
+
+.btn:focus:active {
+    box-shadow: none;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    transition: background-color var(--time);
+}
+
+.alert {
+    border: none;
+    transition: background-color var(--time);
+}
+
+.custom-switch {
+    margin: 1rem;
+}
+
+#toggle-button {
+    transform: scale(1.1);
+}
+
+.custom-control-label::before {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+button {
+    margin-top: 1rem;
+    transition: background-color var(--time);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dark .jumbotron {
+    background-color: var(--typo-bg-color);
+    color: var(--typo-color);
+    transition: background-color var(--time);
+}
+
+.dark .btn {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.dark .btn:hover {
+    background-color: var(--primary-color-d1);
+}
+
+.dark .btn:active {
+    background-color: var(--primary-color-d2) !important;
+    box-shadow: none;
+}
+
+.dark .btn:focus {
+    background-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.dark .btn:focus:hover {
+    background-color: var(--primary-color-d1);
+}
+
+.dark .custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: white;
+}
+
+.dark .alert {
+    background-color: #2e2e2e;
+    border: none;
+    color: var(--typo-color);
+    transition: background-color var(--time);
+}
+
+.dark td {
+    background-color: #111111;
+    border-color: #2e2e2e;
+    color: var(--primary-color);
+    transition: background-color var(--time);
+}
